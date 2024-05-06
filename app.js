@@ -12,9 +12,6 @@ const port = 3000
 // Import router modules for each entity here
 
 app.get('/api/health', (req, res) => {
-	
-	const relevantData={success: true,data:"Halo Rules"};
-	res.json(relevantData)
 	res.status(200).json({ success: true, data: 'Server is running' })
 })
 
