@@ -4,7 +4,9 @@ const app = express()
 const port = 3000
 
 app.get('/api/health', (req, res) => {
-	// Your code here
+	
+	const relevantData={success: true,data:"Halo Rules"};
+	res.json(relevantData)
 })
 
 app.listen(port, () =>
